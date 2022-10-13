@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int n,i,t;
+    cin>>n;
+    int grades[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>grades[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        if(grades[i]>35)
+        {
+            t=(grades[i]/5)*5 +5;
+            if(t-grades[i]<3)
+            {
+                cout<<t<<endl;
+            }
+            else if(t-grades[i]>=3)
+            {
+                cout<<grades[i]<<endl;
+            }
+        }
+        else{
+            cout<<grades[i]<<endl;
+        }
+    }
+    return 0;
+}
+    
