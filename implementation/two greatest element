@@ -1,0 +1,44 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int n,i,t,k;
+cin>>n;
+
+int a[n];
+for(i=0;i<n;i++){
+    cin>>a[i];
+}
+int max=a[0];
+
+
+
+
+for(i=1;i<n;i++){
+    if(max<a[i])
+    {
+       max =a[i];
+         t=max;
+    }
+}
+
+cout<<t<<" ";
+ int max1=a[0];
+
+for(i=1;i<n;i++){
+    if(max1<a[i] && a[i]<t)
+    {
+        
+        
+        max1=a[i];
+        k=max1;
+        }
+    
+}
+cout<<k;
+
+    return 0;
+}
