@@ -18,7 +18,7 @@ void plusMinus(vector<int> arr) {
     {
         if(arr[i]>0)
         {
-            b++;
+           b++;
         }
         else if(arr[i]<0)
         {
