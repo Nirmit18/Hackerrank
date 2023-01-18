@@ -30,6 +30,7 @@ class SinglyLinkedList {
                 this->head = node;
             } else {
                 this->tail->next = node;
+
             }
 
             this->tail = node;
